@@ -1,0 +1,56 @@
+<div class=""><app-slider></app-slider></div>
+<div class="main_margins ">
+  <div class="container text-center">
+    <div class="surahPage m-auto">
+      <div class="p-4 position-relative ">
+        <button
+          (click)="setPageNumber(pageNumber + 1)"
+          class="position-absolute nextBtn btn border"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button
+          (click)="setPageNumber(pageNumber - 1)"
+          class="position-absolute prevBtn btn border"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div
+          class="d-inline"
+          *ngFor="let item of pages[pageNumber]?.verses; let index = index"
+        >
+          <div class="">
+            <div *ngIf="isNewSurah(item, index)">
+              <br />
+
+              <div *ngFor="let surah of currentSwar">
+                <div class=""
+                  *ngIf="
+                    parseInt(item.verse_key.split(':')[0]) ===
+                    parseInt(surah.chapter.id)
+                  "
+                >
+                  <div>
+                    <h2 class="circle fw-bold">
+                      {{ surah.chapter.name_arabic }}
+                    </h2>
+                    <h2 class="pb-2 fw-bold">
+                      بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class=" ayah mx-2">{{ item.verse_key.split(":")[1] }}</p>
+
+            <p class="d-inline ayahCont">
+              {{ SplitText(item.text_indopak) }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

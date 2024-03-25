@@ -1,0 +1,45 @@
+.homeSearch {
+  margin-top: 77px;
+  padding: 60px;
+  background-image: url("../../assets/background.jpg");
+  background-size: cover;
+}
+
+/* .info {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  text-align: right;
+}
+.iconn {
+  color: whitesmoke;
+  font-size: 34px;
+}
+.text {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+} */
+.search {
+  width: 60%;
+}
+.search input {
+  font-size: 20px;
+}
+.search input::placeholder {
+  font-size: 20px;
+}
+.search input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.search .search_icon {
+  font-size: 20px;
+}
+@media (max-width: 991.98px) {
+  .search {
+    width: 100%;
+  }
+}

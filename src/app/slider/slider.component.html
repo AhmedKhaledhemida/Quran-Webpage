@@ -1,0 +1,43 @@
+
+
+<div class="main_margins">
+<input type="checkbox" id="toggleButton" class="toggle-button">
+<label for="toggleButton" class="sliderBtn btn  position-fixed">Quran surah <i class="fa-solid fa-arrow-down"></i></label>
+
+<div class="slider overflow-scroll ">
+  <div *ngFor="let item of surahs" class="w-25">
+    <a
+      [routerLink]="['/slider', item.id]"
+      class="surah d-flex justify-content-between align-items-center border rounded-3 p-1 cursor-pointer text-decoration-none text-dark"
+    >
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="surahNum">
+          <p>{{ item.id }}</p>
+        </div>
+        <div class="ms-2 p-1">
+          <p class="p-0 m-0 engName d-inline">{{ item.name_simple}}</p>
+        </div>
+        <div><p class="p-0 m-0 engName d-inline">{{ item.name_arabic }}</p></div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+<!-- <div class="slider">
+  <div *ngFor="let item of surahs?.references" class="w-25">
+    <a
+      [routerLink]="['/slider', item?.number]"
+      class="surah d-flex justify-content-between align-items-center border rounded-3 p-1 cursor-pointer text-decoration-none text-dark"
+    >
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="surahNum">
+          <p>{{ item?.number }}</p>
+        </div>
+        <div class=" ms-2  ">
+          <p class="p-0 m-0 engName d-inline">{{ item?.englishName }}    </p>
+        </div>
+        <div><p class="p-0 m-0 engName d-inline"> {{ item?.name }}</p></div>
+      </div>
+    </a>
+  </div>
+</div> -->

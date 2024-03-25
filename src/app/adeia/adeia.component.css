@@ -1,0 +1,80 @@
+.all {
+  /* margin-top: 77px; */
+  padding: 60px;
+  background-image: url("../../assets/bg4.png");
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+.out{
+  /* margin-top: 70px; */
+    text-align: right;
+  border-radius: 15px;
+  width: 100%;
+  border: 2px solid transparent;
+  background-color: #f4f5f6;
+  height: 100vh;
+  /* box-shadow: 3px 4px 0px 1px rgba(128, 128, 128, 0.66),
+    -3px 4px 0px 1px rgba(128, 128, 128, 0.66),
+    0px 4px 0px 1px rgba(128, 128, 128, 0.66); */
+}
+.adeia-why{
+  padding: 10px;
+margin-top: 20px;
+border-radius: 2px solid transparent;
+border-radius: 15px;
+background-color: #f4f5f6;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+text-align: right;
+}
+.adeia-why  .top{
+  color: #1A2839;
+  font-size: 18px;
+}
+.top{ display: flex;
+  justify-content: space-between;
+padding-left: 10px;
+}
+.top .icon{
+  margin-left: 7px;
+  color: #094e53;
+}
+
+.adeia-why p{
+  color: #1A2839;
+}
+.adeia-why span{
+  color: #071425;
+  font-weight: bold;
+}
+.adeia-button {
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  background-color:#219DA5;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+.adeiaTap {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+  display: none;
+  background-color: #f9f9f9;
+  padding: 18px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.adeiaTap.active {
+  display: block;
+}

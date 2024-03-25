@@ -1,0 +1,33 @@
+:root {
+  --boxshadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  width: 50px;
+}
+.brdrshadow {
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-item i {
+  color: slategray;
+}
+.nav-item a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+.nav-item:hover a {
+  border-radius: 15px;
+  background-color: #2ca4ab;
+  /* color: #2ca4ab */
+  color: white;
+}
+.pagename {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.pagename:hover {
+  color: #2ca4ab;
+}

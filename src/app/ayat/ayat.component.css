@@ -1,0 +1,73 @@
+.main_margin{
+  margin-top: 90px;
+  /* margin-left: 170px; */
+}
+.circle i{
+  /* color: #2ca4ab; */
+font-size: 29px;
+}
+.circle {
+
+  width: 230px;
+  border-radius: 10px;
+
+ border:1px solid #264143;
+  padding: 10px;
+
+  margin: 20px auto;
+  text-align: center;
+  background-color: #2ca5ab21;
+}
+
+.ayahCont {
+  font-size: 20px;
+  font-weight: 600;
+}
+.surahPage {
+  border-radius: 25px;
+  width: 720px;
+  border: 2px solid #264143;
+  background-color: #f4f5f6;
+  box-shadow: 3px 4px 0px 1px rgba(128, 128, 128, 0.66),
+    -3px 4px 0px 1px rgba(128, 128, 128, 0.66),
+    0px 4px 0px 1px rgba(128, 128, 128, 0.66);
+}
+.ayah {
+  padding: 0 0.5em;
+  font-weight: 800;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+}
+
+.ayah::after {
+  content: "\0006DD";
+  display: inline;
+  position: absolute;
+  font-size: 1.6em;
+  top: 50%;
+  left: 50%;
+  color: #2ca4ab;
+  transform: translate(-50%, -50%);
+}
+.nextBtn {
+  right: -50px;
+  top: 50%;
+}
+.prevBtn {
+  left: -50px;
+  top: 50%;
+}
+/* .surahPage button{
+  color: #2ca4ab;
+} */
+.surahPage button:hover{
+  background-color: #2ca4ab;
+  color: white;
+}
+@media (max-width: 767.98px) {
+  .surahPage{
+    width: 320px;
+  }
+
+ }
